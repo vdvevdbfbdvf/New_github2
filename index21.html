@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Автомойка 2</title>
+
+    <style> 
+    body {
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-image: url(hans-stars-1654074.jpg); 
+    background-attachment: fixed; 
+    background-size: cover;
+    } 
+    body.dark-mode {
+        background-color: #222; 
+        color: #fff;
+    } 
+    .theme-toggle {
+        background-color: #ff5733; 
+        color: #000000; 
+        padding: 10px 20px; 
+        border: none;  
+        border-radius: 5px; 
+        cursor: pointer; 
+        font-size: 16px; 
+        font-weight: bold; 
+        font-family: 'Comic Sans MS', cursive;
+    }
+        header {
+            background-color: purple;
+            padding: 20px;
+            text-align: center; 
+            border: none;
+        }
+
+        .logo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        color: #fff;
+       text-decoration: none;
+}
+    header {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+    footer {
+    font-family: 'Montserrat', sans-serif;
+}
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+         font-family: 'Montserrat', sans-serif;
+         text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+}
+        h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+        .search {
+            margin-top: 20px;
+        }
+
+        .search input[type="text"] {
+            padding: 10px;
+            width: 300px;
+        }
+
+        .search button {
+            padding: 10px 20px;
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: rgb(6, 163, 236);
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        h1 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 20px;
+}
+        .ingredient-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .ingredient {
+            padding: 20px;
+            border: 1px solid #ddd;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .ingredient img {
+            width: 500px;
+            height: 400px;
+            border-radius: 5px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+        }
+
+        .subscription-form {
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .subscription-form form {
+            font-family: 'Comic Sans MS', cursive;
+            display: inline-block;
+        }
+
+        .subscription-form input {
+            font-family: 'Comic Sans MS', cursive;
+            width: 200px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .subscription-form button {
+            font-family: 'Comic Sans MS', cursive;
+            background-color: orange;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        #scrollToTopButton {
+            font-family: 'Comic Sans MS', cursive;
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: aqua;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            z-index: 1000;
+        }
+
+        #scrollToTopButton:hover {
+            background-color: blue;
+        } 
+       .whatsapp-button {
+        background-color: lime;
+        color: #fff;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        font-weight: bold;
+}
+
+        .whatsapp-block {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+} 
+.icon-sun {
+    color: #f59e0b;
+    filter: drop-shadow(0 0 4px #fbbf2480);
+} 
+.icon-moon {
+    color: #6366f1;
+    filter: drop-shadow(0 0 4px #818cf880);
+} 
+.seasonal-ingredients li:hover {
+            transform: scale(1.02);
+        } 
+        .season-image {
+            width: 200px; 
+            height: 150px; 
+            border-radius: 5px;
+        } 
+        .scrollable-container {
+            max-height: 300px; 
+            overflow-y: auto;
+        } 
+        .filter {
+            margin-top: 20px; 
+            margin-bottom: 20px;
+        } 
+        .filter-button {
+            font-family: 'Comic Sans MS', cursive; 
+            background-color: #FF8C5E;     
+            color: #fff; 
+            border: none;   
+            border-radius: 5px; 
+            padding: 10px 20px;   
+            margin-left: 10px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease;
+        } 
+        .filter-button:hover {
+            background-color: #FF5733;
+        } 
+        .seasonal-ingredients li:hover {
+            transform: scale(1.02);
+        } 
+        .season-image {
+            width: 200px; 
+            height: 150px; 
+            border-radius: 5px;
+        } 
+        .scrollable-container {
+            max-height: 300px; 
+            overflow-y: auto;
+        } 
+        .ingredient:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        } 
+        .search button:hover {
+            background-color: #FF814A; 
+            color: #fff; 
+            transition: background-color 0.3s ease, color 0.3s ease;
+        } 
+        nav a:hover, h1:hover {
+            background-color: rgba(241, 245, 4, 0.2); 
+            transition: background-color 0.3s ease;
+        } 
+        .ingredient img:hover {
+            transform: scale(1.1); 
+            opacity: 0.8; 
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        } 
+        .social-icon:hover {
+            background-color: #fff; 
+            border-radius: 50%; 
+            transform: scale(1.2); 
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        } 
+        .subscription-form button:hover {
+            background-color: #FF814A; 
+            color: #fff; 
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">Автомойка</a>
+
+        <nav>
+            <ul>
+                <li><a href="index4.html">Контакты</a></li>
+                <li><a href="#">Услуги и цены</a></li>
+                <li><a href="#">Акции и скидки</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Поиск...">
+            <button onclick="searchRecipes()">Найти</button> 
+            <button class="theme-toggle" onclick="toggleDarkMode()">Темная тема</button>
+             <svg class="icon-sun" xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M4.93 4.93l1.41 1.41"></path><path d="M17.66 17.66l1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="M6.34 17.66l-1.41 1.41"></path><path d="M19.07 4.93l-1.41 1.41"></path></svg> 
+            <svg class="icon-moon" xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+        </div>
+    </header>
+
+    <main>
+
+        <h1>Цены</h1>
+
+        <div class="ingredient-group">
+
+            <div class="ingredient-intem">
+                <div class="ingredient">
+                    <h3>Комплексная мойка</h3>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgLx-hlwPN2iYUPOqczAf_oy6wK7YBqes_chnt3VMiVw&s=10"
+                         alt="Картинка 1">
+
+                    <p>
+                        Полностью очищаем кузов автомобиля, колеса и коврики.
+                        Используем профессиональную автохимию, безопасную для
+                        лакокрасочного покрытия. От 3500 Т
+                    </p>
+                </div>
+            </div>
+
+            <div class="ingredient-intem">
+                <div class="ingredient">
+                    <h3>Мойка кузова</h3>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFKN-aDj9QXjKcpFXm8p1ua4Y-EHRzRQCYNfdv-H0N-A&s=10"
+                         alt="Картинка 2">
+
+                    <p>
+                        Удаление пыли, грязи и дорожных загрязнений с кузова
+                        автомобиля от 2000 Т. Пылесос, тщательная очистка панели
+                        и пластиковых элементов, мойка стёкол.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="ingredient-group">
+
+            <div class="ingredient-intem">
+                <div class="ingredient">
+                    <h3>Уборка салона</h3>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2_PVhvlBVZdgGC1lp6cJcugzz05HnJF5aaKqqzkP6w&s=10"
+                         alt="Картинка 3">
+
+                    <p>
+                        Пылесос, очистка панели и пластиковых элементов,
+                        мойка стекол. От 4 000 Т. Аккуратная очистка
+                        подкапотного пространства от масла, пыли и различных загрязнений.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ingredient-intem">
+                <div class="ingredient">
+                    <h3>Мойка двигателя</h3>
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBNrvRPbf1N_JmBvzXDYu4kCoGOdfFKkD-bqgEUvWZYg&s=10"
+                         alt="Картинка 4">
+
+                    <p>
+                        Аккуратная очистка подкапотного пространства от масла,
+                        пыли и загрязнений. От 3 000 Т. Удаление пыли, грязи
+                        и дорожных загрязнений с кузова автомобиля.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <button id="scrollToTopButton">Наверх</button>
+        <div id="whatapp-block" class="whatsapp-block">
+            <a href="https://api.whatsapp.com/send?phone=87077070707">
+            <img class="whatsapp-button" src="https://cdn-icons-png.flaticon.com/128/15707/15707843.png" alt="картинка 5"> 
+            </a>
+        </div>
+    </main>
+
+
+    <footer>
+
+        <div class="subscription-form">
+
+            <p><strong>Подписка на рассылку:</strong></p>
+
+            <form>
+                <input type="email"
+                       placeholder="Введите ваш email"
+                       required>
+
+                <button type="submit">
+                    Подписаться
+                </button>
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23250.515055435215!2d76.86528411010411!3d43.244832563144996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388369376dfbe185%3A0x9554992a6aa35933!2sAqua%20Service!5e0!3m2!1sru!2skz!4v1791487943091!5m2!1sru!2skz" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+
+        <div class="footer-container">
+
+            <p>&copy; 2025 Автомойка</p>
+
+            <div class="social-links">
+
+                <a href="https://tengrinews.kz/kazakhstan_news/kakoy-budet-pogoda-v-astane-i-almatyi-8-10-oktyabrya-610295/"
+                   target="_blank">
+
+                    <img src="https://cdn-icons-png.flaticon.com/128/152/152810.png"
+                         alt="YouTube"
+                         class="social-icon">
+                </a>
+
+
+                <a href="https://tengrinews.kz/kazakhstan_news/300-avtobusov-sutki-novaya-gazozapravochnaya-stantsiya-609895/"
+                   target="_blank">
+
+                    <img src="https://cdn-icons-png.flaticon.com/128/1384/1384015.png"
+                         alt="Instagram"
+                         class="social-icon">
+                </a>
+
+
+                <a href="https://tengrinews.kz/news/kak-silno-oschuschalos-zemletryasenie-v-almatyi-dannyie-mchs-609533/"
+                   target="_blank">
+
+                    <img src="https://cdn-icons-png.flaticon.com/128/91/91952.png"
+                         alt="Telegram"
+                         class="social-icon">
+                </a>
+
+            </div>
+
+
+            <div class="contact-info">
+
+                <p><strong>Контактная информация:</strong></p>
+
+                <p>
+                    Электронная почта:
+                    <a href="#">asylzannazarbaev@gmail.com</a>
+                </p>
+
+                <p>
+                    Телефон:
+                    <a href="#">+7 (707) 707 77 77</a>
+                </p>
+
+                <p>
+                    Адрес: 123 улица, Город, Страна
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script>
+
+        const scrollToTopButton =
+            document.getElementById("scrollToTopButton");
+
+
+        window.addEventListener("scroll", function () {
+
+            if (window.scrollY > 300) {
+
+                scrollToTopButton.style.display = "block";
+
+            } else {
+
+                scrollToTopButton.style.display = "none";
+
+            }
+
+        });
+
+
+        scrollToTopButton.addEventListener("click", function () {
+
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+
+            });
+
+        });
+
+    </script>
+<script>
+    const whasappButton = document.querySelector('.whatsapp-button'); 
+    function changeButtonSize() {
+    whasappButton.style.transition = 'all 1s ease-in-out'; 
+    const currentSize = parseFloat(getComputedStyle(whasappButton).width); 
+    const newSize = currentSize ==  150 ? 100 : 150; 
+    whasappButton.style.width = newSize + 'px'; 
+    whasappButton.style.height = newSize + 'px'; 
+
+    } 
+    setInterval(changeButtonSize, 2000); 
+
+    function toggleDarkMode() {
+        var body = document.body; 
+        body.classList.toggle('dark-mode'); 
+        if (body.classList.contains('dark-mode')) {
+            document.querySelector('.theme-toggle').innerText = 'Светлая тема'; 
+            body.style.backgroundImage = "url('hans-stars-1654074.jpg')"; 
+        } else {
+            document.querySelector('.theme-toggle').innerText = 'Темная тема'; 
+            body.style.backgroundImage = "url('images (32).jpg')";
+        }
+    }
+</script>
+</body>
+</html>
+

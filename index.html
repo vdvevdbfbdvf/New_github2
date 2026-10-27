@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Автомойка 1</title> 
+    <style> 
+   header {
+    background-image: url('images.jpg'); 
+    background-size: cover; 
+    background-attachment: fixed;
+    font-family: 'Comic Sans MS', cursive; 
+    padding: 20px; 
+    text-align: center; 
+    border: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 100;
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+    padding-top: 130px; 
+}
+    body {
+    font-family: 'Montserrat', sans-serif;
+} 
+header {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+}
+        header {
+            background-color: orangered; 
+            padding: 20px; 
+            text-align: center;
+        } 
+        .logo {
+            font-size: 24px; 
+            font-weight: bold; 
+            color: #fff; 
+            text-decoration: none;
+        } 
+        nav {
+            margin-top: 10px;
+        } 
+        nav ul{
+            list-style: none; 
+            padding: 0;
+        } 
+        nav li {
+            display: inline; 
+            margin-right: 20px;
+        } 
+        nav a {
+            text-decoration: none; 
+            color: #fff; 
+            font-weight: bold;
+        } 
+        .search {
+            margin-top: 20px;
+        } 
+        .search input[type="text"] {
+            padding: 10px; 
+            width: 300px;
+        } 
+        .search button {
+            padding: 10px 20px; 
+            background-color: #fff; 
+            border: none; 
+            cursor: pointer;
+        } 
+        main {
+            text-align: center; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px;
+        } 
+        h1 {
+            font-size: 28px; 
+            margin-bottom: 20px;
+        } 
+        .recipe {
+            border: 1px solid #ddd; 
+            padding: 20px; 
+            margin-bottom: 20px;
+        } 
+        .recipe img {
+            width: 500px; 
+            height: 400px; 
+            object-fit: cover;
+        } 
+        h2 {
+            font-size: 24px; 
+            margin-top: 10px;
+        } 
+        p {
+            margin-top: 10px;
+        } 
+        a {
+            color: red; 
+            text-decoration: none; 
+            font-weight: bold;
+        } 
+        footer {
+            background-color: lime; 
+            padding: 10px 0; 
+            text-align: center; 
+            color: #fff;
+        } 
+        .footer-container {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            max-width: 960px; 
+            margin: 0 auto;
+        } 
+        .contact-info {
+            text-align: left; 
+            padding-left: 20px;
+        } 
+        .contact-info a {
+        color: #fff; 
+        text-decoration: none;
+        } 
+        .social-links {
+            display: flex; 
+            justify-content: space-around;
+        } 
+        .social-icon {
+            width: 30px; 
+            height: 30px; 
+            margin: 0 5px;
+        } 
+        .subscriptioon-form {
+            font-family: 'Comic Sans MS', cursive; 
+            text-align: center; 
+            margin-bottom: 50px;
+        } 
+        .subscriptioon-form form {
+            font-family: 'Comic Sans MS' cursive; 
+            display: inline-block;
+        }
+        .subscriptioon-form input {
+            font-family: 'Comic Sans MS', cursive; 
+            width: 200px; 
+            padding: 10px; 
+            border: none; 
+            border-radius: 5px;
+        } 
+        .subscriptioon-form button {
+            font-family: 'Comic Sans MS', cursive; 
+            background-color: orange; 
+            color: #fff; 
+            border: none; 
+            border-radius: 5px; 
+            padding: 10px 20px; 
+            margin-left: 10px; 
+            cursor: pointer;
+        } 
+        #scrollToTopButton {
+            font-family: 'Comic Sans MS',cursive; 
+            display: none; 
+            position: fixed; 
+            bottom: 20px; 
+            right: 20px; 
+            background-color: aqua; 
+            color: #fff; 
+            border: none; 
+            border-radius: 50%; 
+            padding: 10px; 
+            cursor: pointer; 
+            font-size: 16px;
+        } 
+        .seasonal-ingredients {
+            font-family: 'Comic Sans MS', cursive; 
+            background-color: #f5f5f5; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+            margin-top: 20px;
+        } 
+        .seasonal-ingredients h2 {
+            font-size: 24px; 
+            color: FF5733; 
+        } 
+        .seasonal-ingredients ul {
+            list-style: none; 
+            padding: 0;
+        } 
+        .seasonal-ingredients li {
+            margin: 20px 0; 
+            border: 1px solid #ddd; 
+            padding: 20px; 
+            border-radius: 10px; 
+            background-color: #fff; 
+            transition: transform 0.3s; 
+            cursor: pointer;
+        } 
+        .seasonal-ingredients li:hover {
+            transform: scale(1.02);
+        } 
+        .season-image {
+            width: 200px; 
+            height: 150px; 
+            border-radius: 5px;
+        } 
+        .scrollable-container {
+            max-height: 300px; 
+            overflow-y: auto;
+        } 
+        .filter {
+            margin-top: 20px; 
+            margin-bottom: 20px;
+        } 
+        .filter-button {
+            font-family: 'Comic Sans MS', cursive; 
+            background-color: #FF8C5E;     
+            color: #fff; 
+            border: none;   
+            border-radius: 5px; 
+            padding: 10px 20px;   
+            margin-left: 10px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease;
+        } 
+        .filter-button:hover {
+            background-color: #FF5733;
+        } 
+        .seasonal-ingredients li:hover {
+            transform: scale(1.02);
+        } 
+        .season-image {
+            width: 200px; 
+            height: 150px; 
+            border-radius: 5px;
+        } 
+        .scrollable-container {
+            max-height: 300px; 
+            overflow-y: auto;
+        } 
+        .ingredient:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        } 
+        .search button:hover {
+            background-color: #FF814A; 
+            color: #fff; 
+            transition: background-color 0.3s ease, color 0.3s ease;
+        } 
+        nav a:hover, h1:hover {
+            background-color: rgba(0, 195, 255, 0.2); 
+            transition: background-color 0.3s ease;
+        } 
+        .ingredient img:hover {
+            transform: scale(1.1); 
+            opacity: 0.8; 
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        } 
+        .social-icon:hover {
+            background-color: #fff; 
+            border-radius: 50%; 
+            transform: scale(1.2); 
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        } 
+        .subscription-form button:hover {
+            background-color: #FF814A; 
+            color: #fff; 
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style> 
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Автомойка</a> 
+        <nav>
+            <ul>
+                <li><a href="index21.html">Контакты</a></li>
+                <li><a href="index4.html">Услуги и цены</a></li>
+                <li><a href="#">Акции и скидки</a></li>
+            </ul>
+        </nav> 
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Поиск...">
+            <button onclick="searchRecipes()">Найти</button> 
+        </div>
+    </header>
+    <main>
+        <div class="recipe">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwbcmKh3sWPqR1szlRMGAq5pPAaWL-6_sS4xthED2PTA&s=10https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwbcmKh3sWPqR1szlRMGAq5pPAaWL-6_sS4xthED2PTA&s=10" alt="Картинка 1">
+            <h2>Профессиональная автомойка</h2> 
+            <p>Бережно очищаем кузов автомобиля от пыли, грязи и дорожных загрязнений.</p> 
+            <a href="#">Подробнее</a> 
+        </div> 
+        <div class="recipe">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkBWu7Eun2A2jt3Tf1VT-txVzhSTtDUlf5_UyzpKFsuA&s=10" alt="Картинка 2">
+            <h2>Быстрая мойка</h2> 
+            <p>Если вам нужно быстро привести автомобиль в порядок, наша экспресс-мойка поможет удалить основную грязь и пыль с кузова.</p> 
+            <a href="#">Подробнее</a>
+        </div> 
+        <div class="recipe"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPNQ9JlFjhNymw6-BpoFrDTNmh6uDQx9eJfyBlXQZx0A&s" alt="Картинка 3"> 
+        <h2>Сияющий кузов</h2>
+        <p>Тщательно очищаем поверхность автомобиля, удаляем следы грязи и дорожных загрязнений.</p> 
+        <a href="#">Подробнее</a>
+        </div> 
+        <div class="recipe"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu2FTbVBdTqnban0b58kj9DGTYZIb_M0yezma9X_HpZw&s=10" alt="Картинка 4">  
+        <h2>Чистота и блеск автомобиля</h2>
+        <p>Заботимся о внешнем виде вашего автомобиля и уделяем внимание каждой детали.</p> 
+        <a href="#">Подробнее</a> 
+        </div> 
+        <div class="seasonal-ingredients">
+            <h2>Сезонные машины</h2> 
+            <p>Наша автомойка предлагает качественную мойку автомобилей в любое время года, помогая сохранить чистоту, блеск и защиту вашего автомобиля.</p> 
+            <div class="simplebar scrollable-container">
+                <ul>
+                    <li>
+                        <h3>Автомойка весна</h3> 
+                        <img class="season-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLSEpRSS8-FmQUSz1kSQhKYp452AkDRLdXM7JslwmQjQ4pSY3uJ148mMMM&s=10" alt="Весна"> 
+                        <p>Весной наша автомойка поможет удалить грязь, пыль и остатки реагентов, возвращая вашему автомобилю чистоту и блеск после зимы.</p> 
+
+                    </li> 
+                    <li>
+                        <h3>Лето</h3> 
+                        <img class="season-image" src="https://media.istockphoto.com/id/1185615743/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D0%B9%D0%BA%D0%B0-%D1%81%D0%B0%D0%BC%D0%BE%D0%BE%D0%B1%D1%81%D0%BB%D1%83%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F.jpg?s=1024x1024&w=is&k=20&c=qSfe5kaGROUxe1m9_KpglcnI1kW8jkWfg6W4cmEmc-M=" alt="Лето"> 
+                        <p>Летом наша автомойка поможет избавиться от пыли, следов насекомых и дорожных загрязнений, сохраняя ваш автомобиль чистым и блестящим.</p>
+                    </li> 
+                    <li>
+                        <h3>Осень</h3> 
+                        <img class="season-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTicB1AhL6SH0o0EPSDf5JRFRhy4JE8jdYg2g1kZbSKE972S4CflV6qdTch&s=10" alt="Осень"> 
+                        <p>Осенью наша автомойка поможет удалить грязь, дождевые разводы и опавшие листья, сохраняя чистоту и ухоженный вид вашего автомобиля.</p>
+                    </li> 
+                    <li>
+                        <h3>Зима</h3> 
+                        <img class="season-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1opKWmwqnHbpvVpLNMz5RFzlFFETqjrgJNvwMA9dahI1CVGLQ3QFbnE08&s=10" alt="Зима"> 
+                        <p>Зимой наша автомойка поможет удалить снег, лёд и дорожные реагенты, защищая кузов автомобиля от коррозии и сохраняя его чистоту.</p>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    <div class="filter">
+        <label><input type="checkbox" id="filterSoup">Профессиональная автомойка</label> 
+        <label><input type="checkbox" id="filterSalad">Быстрая мойка</label>  
+        <label><input type="checkbox" id="filterMainCourse">Премиум-мойка</label>  
+        <button onclick="applyFilter()" class="filter-button">Применить фильр</button> 
+    </div> 
+    <div class="recipe" data-category="soup"> 
+        <img src="Профессиональная автомойка.jpg" alt="Картинка 1">
+        <h2>Профессиональная автомойка</h2> 
+        <p>Бережно очищаем кузов автомобиля от пыли</p>  
+        <a href="#" onclick="showRecipe"('Профессиональная автомойка', 'Профессиональная автомойка.jpg', 'Информация про автомойка');">Подробнее</a>
+    </div> 
+    <div class="recipe" data-category="main">
+        <img src="Быстрая мойка.jpg" alt="Картинка 2">
+        <h2>Быстрая мойка</h2> 
+        <p>наша экспресс-мойка поможет удалить основную грязь и пыль с кузова.</p> 
+        <a href="#" onclick="showRecipe"('Быстрая автомойка', 'Быстрая мойка.jpg', 'Информация про быстрая автомойка');">Подробнее</a> 
+    </div> 
+    <div class="recipe" data-category="salad">
+        <img src="Премиум.jpg" alt="Картинка 3">
+        <h2>Автомойка премиум</h2> 
+        <p>Премиальный уход за вашим автомобилем, безупречная чистота и внимание к каждой детали.</p> 
+        <a href="#" onclick="showRecipe"('Премиум автомойка', 'Премиум.jpg', 'Информация про премиум автомойка');">Подробнее</a>
+    </div> 
+    <div class="recipe" data-category="salad">
+        <img src="VIP.jpg" alt="Картинка 4"> 
+        <h2>Автомойка VIP</h2> 
+        <p>безупречная чистота, премиальный уход и блеск вашего автомобиля в каждой детали.</p> 
+        <a href="#" onclick="showRecipe"('Автомойка VIP', 'VIP.jpg', 'Информация про VIP автомойка');">Подробнее</a>
+    </div>
+    </main> 
+    <footer> 
+        <div class="subscription-form"> 
+            <p><strong>Подписка на рассылку:</strong></p> 
+            <form> 
+                <input type="email" placeholder="Введите ваш email" required> 
+                <button type="submit">Подписаться</button> 
+            </form> 
+            </div> 
+        <div class="footer-container">
+        <p>&copy; 2023 Автомойка</p> 
+        <div class="social-links"> 
+            <a href="https://tengrinews.kz/kazakhstan_news/kakoy-budet-pogoda-v-astane-i-almatyi-8-10-oktyabrya-610295/" target="_blank"> 
+                <img src="https://cdn-icons-png.flaticon.com/128/152/152810.png" alt="YouTube" class="social-icon">
+            </a> 
+            <a href="https://tengrinews.kz/kazakhstan_news/300-avtobusov-sutki-novaya-gazozapravochnaya-stantsiya-609895/"  target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/1384/1384015.png" alt="Instagram" class="social-icon">
+            </a> 
+            <a href="https://tengrinews.kz/news/kak-silno-oschuschalos-zemletryasenie-v-almatyi-dannyie-mchs-609533/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/128/91/91952.png" alt="Telegram" class="social-icon">
+            </a> 
+            </div> 
+        <div class="contact-info">
+            <p><strong>Контактная информация:</strong></p> 
+            <p>Электронная почта: <a href="#">asylzannazarbaev@gmail.com</a></p> 
+            <p>Телефон: <a href="#">+7 (707) 707 77 77</a></p> 
+            <p>Адрес: 123 улица, Город, Страна</p>
+        </div> 
+        </div>
+    </footer> 
+        <script>
+        function searchRecipes() {
+            var input, filter, recipes, recipe, title, description, i; 
+            input = document.getElementById('searchInput'); 
+            filter = input.value.toLowerCase(); 
+            recipes = document.querySelectorAll('.recipe'); 
+            for (i = 0; i < recipes.length; i++) {
+                recipes[i].style.display = 'none';
+            } 
+            for (i = 0; i < recipes.length; i++) {
+                recipe = recipes[i]; 
+                title = recipe.getElementsByTagName('h2')[0].textContent.toLowerCase(); 
+                description = recipe.getElementsByTagName('p')[0].textContent.toLowerCase(); 
+                if (title.indexOf(filter) > -1 || description.indexOf(filter) > -1) {
+                    recipe.style.display = ''; 
+                    return;
+                }
+
+            }
+        } 
+        function parrallaxScroll() {
+            const header = document.querySelector('header'); 
+            const scrolled = window.pageYOffset; 
+            header.style.backgroundPositionY = -(scrolled * 0.3) + 'px';
+        }
+        window.addEventListener('scroll', parrallaxScroll); 
+
+        new simpleBar(document.querySelector('.simplebar')); 
+        const seasonalItems = document.querySelectorAll('.seasonal-ingredients li'); 
+        seasonalItems.forEach((item) => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        }); 
+
+       
+
+            function applyFilter() {
+            var filterSoup = document.getElementById('filterSoup').checked; 
+            var filterSalad = document.getElementById('filterSalad').checked; 
+            var filterMainCourse = document.getElementById('filterMainCourse').checked; 
+            var recipes = document.querySelectorAll('.recipe'); 
+
+            for (var i = 0; i < recipes.length; i++) {
+                var recipe = recipes[i]; 
+                var category = recipe.dataset.category; 
+
+                if ((filterSoup && category === 'soup') ||  
+                    (filterSalad && category === 'main') || 
+                    (filterMainCourse && category === 'salad')) {
+                    recipe.style.display = ''; 
+            } else {
+                recipe.style.display = 'none';
+            }
+        }
+    }
+
+
+    </script>
+</body>
+</html> 

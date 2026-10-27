@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомойка 3</title> 
+    <style>
+        header {
+            background-color: purple;
+            padding: 20px;
+            text-align: center; 
+            border: none;
+        } 
+        .logo { 
+        font-size: 24px;
+        font-weight: 800;
+        color: #fff;
+       text-decoration: none; 
+        } 
+          nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+} 
+        .search {
+            margin-top: 20px;
+        }
+
+        .search input[type="text"] {
+            padding: 10px;
+            width: 300px;
+        }
+
+        .search button {
+            padding: 10px 20px;
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+        } 
+        body {
+            margin: 0; 
+            padding: 0; 
+        } 
+        footer {
+            position: fixed; 
+            bottom: 0; 
+            left: 0; 
+            width: 100%; 
+            background-color: grey; 
+            padding: 10px 0; 
+            text-align: center; 
+            color: #fff;
+        } 
+      .slider-container {
+        position: relative;
+      }
+      .slider-container .slider {
+        display: flex; 
+        transition: transform 0.5s ease;
+      } 
+      .slider-container .slide {
+        flex: 0 0 33.333%; 
+        text-align: center;
+      } 
+      .slider-container .prev, 
+      .slider-container .next {
+        position: absolute; 
+        top: 50%; 
+        transform: translateY(-50%); 
+        background: rgba(255, 255, 255, 0.8); 
+        border: 2px solid #ff5733; 
+        color: #ff5733; 
+        font-size: 20xpx; 
+        cursor: pointer; 
+        z-index: 1; 
+        padding: 10px 20px; 
+        transition: 0.7s, color 0.7s;
+      } 
+      .slider-container .prev {
+        left: 10px;
+      } 
+      .slider-container .next {
+        right: 10px;
+      } 
+      .slider-container .prev:hover, 
+      .slider-container .next:hover {
+        background: #ff5733; 
+        color: #fff;
+      }
+        .ppp {
+            font-size: 28px; 
+            color: aqua;
+        } 
+        .seasonal-ingredients li:hover {
+            transform: scale(1.02);
+        } 
+        .season-image {
+            width: 200px; 
+            height: 150px; 
+            border-radius: 5px;
+        } 
+        .scrollable-container {
+            max-height: 300px; 
+            overflow-y: auto;
+        } 
+        .filter {
+            margin-top: 20px; 
+            margin-bottom: 20px;
+        } 
+        .filter-button {
+            font-family: 'Comic Sans MS', cursive; 
+            background-color: #FF8C5E;     
+            color: #fff; 
+            border: none;   
+            border-radius: 5px; 
+            padding: 10px 20px;   
+            margin-left: 10px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease;
+        } 
+        .filter-button:hover {
+            background-color: #FF5733;
+        } 
+        .seasonal-ingredients li:hover {
+            transform: scale(1.02);
+        } 
+        .season-image {
+            width: 200px; 
+            height: 150px; 
+            border-radius: 5px;
+        } 
+        .scrollable-container {
+            max-height: 300px; 
+            overflow-y: auto;
+        } 
+        .ingredient:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        } 
+        .search button:hover {
+            background-color: #FF814A; 
+            color: #fff; 
+            transition: background-color 0.3s ease, color 0.3s ease;
+        } 
+        nav a:hover, h1:hover {
+            background-color: rgba(255, 255, 255, 0.2); 
+            transition: background-color 0.3s ease;
+        } 
+        .ingredient img:hover {
+            transform: scale(1.1); 
+            opacity: 0.8; 
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        } 
+        .social-icon:hover {
+            background-color: #fff; 
+            border-radius: 50%; 
+            transform: scale(1.2); 
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        } 
+        .subscription-form button:hover {
+            background-color: #FF814A; 
+            color: #fff; 
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+      <header>
+        <a href="#" class="logo">Автомойка</a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Услуги и цены</a></li>
+                <li><a href="#">Акции и скидки</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Поиск...">
+            <button onclick="searchRecipes()">Найти</button> 
+        </div>
+    </header> 
+    <main>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"> 
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/1iTbcz9DX8k?si=ZpYPlwsDawLdPC5B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                    <p class="ppp">Описание видео 1</p>
+                </div> 
+            <div class="slide"> 
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/Ic4IQGrVZHo?si=5TIywf5t88AEualz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                <p class="ppp">Описание видео 2</p>
+            </div> 
+            <div class="slide"> 
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/3JQmSg38lno?si=MFfK96f6SsHJzv7F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                <p class="ppp">Описание видео 3</p>
+        </div> 
+        <div class="slide"> 
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/lPEg71glFGs?si=D9GYPLsOwtQi85-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+            <p class="ppp">Описание видео 4</p> 
+        </div> 
+        <div class="slide"> 
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/LtrYj8SETnY?si=d-gjNz3PKIjYAsuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        <p class="ppp">Описание видео 5</p> 
+        </div> 
+        <div class="slide"> 
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/ZCdmogCzo_E?si=5SdmO0TCjSi97aVX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        <p class="ppp">Описание видео 6</p> 
+        </div> 
+        <div class="slide"> 
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/dgZi_AUdxvY?si=OgDum9kS0NGEz14J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        <p class="ppp">Описание видео 7</p> 
+        </div> 
+        </div> 
+      <button class="prev">&#60;</button> 
+    <button class="next">&#62;</button> 
+
+</div>
+    </main> 
+    <footer>
+        <p>&copy; 2022 Автомойка</p>
+    </footer> 
+    <script>
+
+const slider = document.querySelector('.slider'); 
+const prevBtn = document.querySelector('.prev'); 
+const nextBtn = document.querySelector('.next'); 
+
+let counter = 0; 
+
+nextBtn.addEventListener('click', () => {
+    if (counter < 4) {
+        counter++; 
+        slider.style.transform = `translateX(${-33.333 * counter}%)`; 
+    } else {
+        counter = 0; 
+        slider.style.transform = 'translateX(0)';
+    }
+});
+
+prevBtn.addEventListener('click', () => {
+    if (counter > 0) {
+        counter--; 
+        slider.style.transform = `translateX(${-33.333 * counter}%)`; 
+    } else {
+        counter = 4; 
+        slider.style.transform = `translateX(${-33.333 * counter}%)`;
+    }
+});
+
+    </script>
+</body>
+</html> 
